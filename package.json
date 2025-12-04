@@ -1,0 +1,33 @@
+{
+  "name": "ot-launcher-api",
+  "version": "0.0.1",
+  "description": "Backend for OT Launcher",
+  "homepage": "https://github.com/Oen44/ot-launcher-api#readme",
+  "bugs": {
+    "url": "https://github.com/Oen44/ot-launcher-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oen44/ot-launcher-api.git"
+  },
+  "license": "MIT",
+  "author": "https://github.com/Oen44",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "test"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.19",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
