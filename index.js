@@ -10,7 +10,14 @@ dayjs.extend(relativeTime);
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+// Configurar CORS para permitir todas as origens
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 const PORT = process.env.PORT || 3000;
 
 const cache = new NodeCache({ stdTTL: parseInt(process.env.CACHE_TTL) || 30 });
